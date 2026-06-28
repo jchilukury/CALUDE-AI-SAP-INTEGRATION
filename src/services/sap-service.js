@@ -21,7 +21,8 @@ export class SAPService {
       httpsAgent: httpsAgent,
       headers: {
         'Content-Type': 'application/json',
-        'X-Requested-With': 'XMLHttpRequest'
+        'X-Requested-With': 'XMLHttpRequest',
+        'sap-client': this.config.client
       },
       auth: {
         username: this.config.username,
